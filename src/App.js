@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import logo from './logo.svg';
 //import { useState } from 'react';
 
 
@@ -54,6 +55,10 @@ class App extends React.Component {
           <div className='counterContainer'>{this.state.counter}</div>
           <button onClick={this.count}>Click</button>
           <button onClick={this.reset}>Reload</button>
+          <div className="react">
+              <p>Powered by React.</p>
+              <img src={logo} className="reactLogo" alt="logo" />
+            </div>  
       </React.Fragment>
   
     );

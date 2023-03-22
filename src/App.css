@@ -37,3 +37,38 @@ button {
 button:hover {
   opacity: 85%;
 }
+
+.react {
+  text-align: center;
+  color:white;
+  display: flex;
+  align-items: center;
+  gap:2.5px;
+  position: absolute;
+  top:89%;
+  right: 10px;
+}
+
+.reactLogo {
+  height: 7.5vmin;
+  cursor: crosshair;
+}
+
+.react p {
+  font-size: 1.5rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reactLogo {
+    animation: reactLogo-spin infinite 45s linear;
+  }
+}
+
+@keyframes reactLogo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
